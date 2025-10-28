@@ -1,19 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-//struct used for storing serial data
-struct myData {
-	int serialSpeed;
-	//index of 3 must be letter
-	char btData[4];
-}serialData;
-
-struct myControls {
-	int speedR;
-	int speedL;
-	int dir;
-}serialControl;
-
 int speed = 0;
 int num = 0;
 int index = 0;
@@ -119,6 +106,4 @@ void loop() {
     procesMessage(BT);
     dataComplete = false;
   }
-  
-
 }
